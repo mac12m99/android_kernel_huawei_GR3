@@ -5,5 +5,5 @@ before_script:
 - git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 $HOME/aarch64/aarch64-linux-android-4.9
 - git clone https://github.com/mtker/MT6735_Longcheer $HOME
 script:
-"cp android_kernel_huawei_GR3 ALPS.L0.MP8.V2.1_LCSH6735_65C_HZ_L_INHOUSE/alps/device/"
+- cp android_kernel_huawei_GR3 ALPS.L0.MP8.V2.1_LCSH6735_65C_HZ_L_INHOUSE/alps/device/
 "ALPS.L0.MP8.V2.1_LCSH6735_65C_HZ_L_INHOUSE/alps/device/android_kernel_huawei_GR3/build.sh"
