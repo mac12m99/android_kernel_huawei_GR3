@@ -1,0 +1,8 @@
+language: c
+before_script:
+- git clone https://android.googlesource.com/platform/prebuilts/gcc/linux-x86/aarch64/aarch64-linux-android-4.9 $HOME/aarch64
+script:
+- export ARCH=arm64
+- export CROSS_COMPILE="$HOME/aarch64/aarch64-linux-android-4.9/bin/aarch64-linux-android-"
+- make -j4 hq6753_65u_b2b_l1_defconfig	
+- make -j4
